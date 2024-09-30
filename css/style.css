@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+section {
+  height: 400vh;
+  background: url("../assets/img1.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.layer h1,
+h2 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.layer h2 {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: #444;
+}
+
+.layer h1 {
+  line-height: 1;
+  font-size: 10em;
+  font-weight: 900;
+  color: #222;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.layer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5%;
+  transition: transform 0.2s ease-out;
+  overflow: hidden;
+}
+
+section.section2 {
+  height: 150vh;
+  padding: 5%;
+  color: white;
+  background: url("../assets/img2.png") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+  position: relative;
+}
+
+.section2 h1 {
+  font-size: 3em;
+  color: white;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.wrapper .card {
+  color: white;
+  background-color: rebeccapurple;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.wrapper .card:hover {
+  transform: scale(0.95);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.section3 {
+  padding: 8%;
+  height: auto;
+  background-color: #333;
+  color: #fff;
+}
+
+.section3 h1 {
+  font-size: 2.5em;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.section3 .wrapper {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.contact-details {
+  max-width: 400px;
+}
+
+.contact-details h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-details ul {
+  list-style: none;
+}
+
+.contact-details ul li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 100%;
+}
+
+.gmap_iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
